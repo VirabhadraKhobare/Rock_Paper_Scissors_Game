@@ -57,18 +57,18 @@ The game also displays ASCII art for each choice.
 
   You lose!
 
-##Known Issues
+## Known Issues
   ⚠️ The program crashes if the user inputs a number other than 0, 1, or 2. Consider adding input 
   validation to handle incorrect inputs properly.
 
-##Future Improvements
+## Future Improvements
   - Add a loop to allow multiple rounds.
   - Improve input validation.
   - Keep track of scores.
   - Contributing
   - Feel free to contribute by submitting pull requests or suggesting improvements.
 
-##License
+## License
   This project is licensed under the MIT License.
 
 ✨ Have fun playing! ✨
