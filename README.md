@@ -44,7 +44,7 @@ The game also displays ASCII art for each choice.
    ---'   ____)
         (_____)
         (_____)
-        (____)
+        (____) 
   ---.__(___)
 
   Computer chose:
@@ -57,20 +57,18 @@ The game also displays ASCII art for each choice.
 
   You lose!
 
-**## Future Improvements**
-  - Add a loop to allow multiple rounds.
-  - Improve input validation.
-  - Keep track of scores.
-  - Contributing
-  - Feel free to contribute by submitting pull requests or suggesting improvements.
 
-**## License**
-  This project is licensed under the MIT License.
+## Future Improvements
+- Add a loop to allow multiple rounds.
+- Improve input validation.
+- Keep track of scores.
+- Contributing
+- Feel free to contribute by submitting pull requests or suggesting improvements.
+
+## License
+This project is licensed under the MIT License.
 
 ✨ Have fun playing! ✨
   ```vbnet
   This README covers all the key features and instructions for your game. Let me know if you need 
   modifications! 🚀
-
-
-
