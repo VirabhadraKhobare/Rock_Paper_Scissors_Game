@@ -36,7 +36,7 @@ The game also displays ASCII art for each choice.
 2. The computer will randomly select its move.
 3. The program will compare both choices and determine the winner.
 
-## Example Output
+## Example Output 
    ```lua
    What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.
    0
@@ -57,18 +57,14 @@ The game also displays ASCII art for each choice.
 
   You lose!
 
-## Known Issues
-  ⚠️ The program crashes if the user inputs a number other than 0, 1, or 2. Consider adding input 
-  validation to handle incorrect inputs properly.
-
-## Future Improvements
+**## Future Improvements**
   - Add a loop to allow multiple rounds.
   - Improve input validation.
   - Keep track of scores.
   - Contributing
   - Feel free to contribute by submitting pull requests or suggesting improvements.
 
-## License
+**## License**
   This project is licensed under the MIT License.
 
 ✨ Have fun playing! ✨
