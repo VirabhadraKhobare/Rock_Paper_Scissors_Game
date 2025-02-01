@@ -1,4 +1,5 @@
 import random
+
 rock = """
     _______
 ---'   ____)
@@ -7,7 +8,6 @@ rock = """
       (____)
 ---.__(___)
 """
-
 
 paper = """
      _______
@@ -18,7 +18,7 @@ paper = """
 ---.__________)
 """
 
-scissors ="""
+scissors = """
     _______
 ---'   ____)____
           ______)
@@ -27,29 +27,32 @@ scissors ="""
 ---.__(___)
 """
 
-
-
-#rock : 0, paper : 1, scissors : 2
+# Rock: 0, Paper: 1, Scissors: 2
 ascii_images = [rock, paper, scissors]
 
-userInput = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
-print(ascii_images[userInput])
+# User input validation
+try:
+    userInput = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
+    if userInput not in [0, 1, 2]:
+        print("Invalid choice! Please enter 0, 1, or 2.")
+    else:
+        print("You chose:")
+        print(ascii_images[userInput])
 
-computer_choice = random.randint(0, 2)
-print("Computer chose:")
-print(ascii_images[computer_choice])
+        # Computer's choice
+        computer_choice = random.randint(0, 2)
+        print("Computer chose:")
+        print(ascii_images[computer_choice])
 
+        # Determine the winner
+        if userInput == computer_choice:
+            print("It's a tie!")
+        elif (userInput == 0 and computer_choice == 2) or \
+             (userInput == 1 and computer_choice == 0) or \
+             (userInput == 2 and computer_choice == 1):
+            print("You win! 🎉")
+        else:
+            print("You lose! 😢")
 
-if userInput >=3 or userInput < 0:
-  print("You typed an invaliusd number, you lose!")
-elif userInput == 0 and computer_choice == 2:
-  print("You win!")
-elif userInput == 2 and computer_choice == 0:
-    print("You lose!")    
-elif computer_choice>userInput:
-     print("You lose!")
-elif userInput>computer_choice:
-     print("You win!")
-elif computer_choice == userInput:
-    print("It's a tie!")
-     
+except ValueError:
+    print("Invalid input! Please enter a number (0, 1, or 2).")
